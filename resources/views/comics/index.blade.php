@@ -15,7 +15,9 @@
                     <tr>
                         <td>{{ $comic->id }}</td>
                         <td>{{ $comic->Title }}</td>
-                        <td>SHOW</td>
+                        <td>
+                            <a class="btn btn-success" href="{{ route('comics.show', $comic->id) }}">SHOW</a>
+                        </td>
                         <td>EDIT</td>
                         <td>DELETE</td>
                     </tr>
