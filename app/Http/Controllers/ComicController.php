@@ -55,7 +55,8 @@ class ComicController extends Controller
             return view('comics.show', compact('comic'));
         }
 
-       return '404';
+        //Error 404
+       abort(404);
     }
 
     /**
